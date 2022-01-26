@@ -1,5 +1,6 @@
 #include <SFML/Graphics.hpp>
 #include <iostream>
+using namespace std;
 
 int main()
 {
@@ -8,7 +9,7 @@ int main()
     auto image = sf::Image{};
     if (!image.loadFromFile("src/assets/icons/ban.png"))
     {
-        std::cout<<"erreur de l'affichage de l'icône";
+        cout<<"erreur de l'affichage de l'icône";
     }
     window.setIcon(image.getSize().x, image.getSize().y, image.getPixelsPtr());
     sf::CircleShape shape(100.f);
