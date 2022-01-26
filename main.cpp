@@ -5,7 +5,7 @@ using namespace sf;
 int main()
 {
     
-    sf::RenderWindow window(sf::VideoMode(100, 400), "Modo modo");
+    sf::RenderWindow window(sf::VideoMode(1000, 400), "Modo modo");
     auto image = sf::Image{};
     if (!image.loadFromFile("src/assets/icons/ban.png"))
     {
